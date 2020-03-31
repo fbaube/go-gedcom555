@@ -3,22 +3,13 @@
 This is just a link dump. Don't read too much into the 
 links themselves or the order in which they are given.
 
-## GEDCOM X (meh) 
-
-* [Main site](http://www.gedcomx.org/) 
-* [Specs](http://www.gedcomx.org/Specifications.html)
-* [_GEDXML, GEDCOM XML and GEDCOM X are not versions of GEDCOM, but GEDCOM alternatives._](https://www.gedcom.org/versions.html)
-
-## GEDCOM 5.5.5
-
 [The latest version of GEDCOM is GEDCOM 5.5.5, released on 2 Oct 2019. It succeeds GEDCOM 5.5.1, released on 2 Oct 1999.](https://www.gedcom.org/)
 
 _It is a deliberate feature of GEDCOM 5.5.5 that <br/> 
 you can manually change the version number from 5.5.5 to 5.5.1, <br/>
 thereby downgrading a GEDCOM 5.5.5 file to a GEDCOM 5.5.1 file, <br/>
-so it can be imported by apps that do not support GEDCOM 5.5.5 yet._
-
-_By the way, this feature works only in that direction; <br/>
+so it can be imported by apps that do not support GEDCOM 5.5.5 yet._<br/>
+_By the way, this feature works only in one direction; <br/>
 you **can** **down**grade a 5.5.5 file to a 5.5.1 file by changing the version number, <br/> 
 you can**not** **up**grade a 5.5.1 file to a 5.5.5 file by changing the version number, <br/>
 because most 5.5.1 files simply aren't up to GEDCOM 5.5.5 standards._
@@ -61,10 +52,9 @@ expands on this:
 
 # Implementation issues
 
-* Not LINEAGE-LINKED but LINAGE-LINKED, LINEAGE_LINKED, Lineage - Linked
-* Event GEDCOM never caught on, isn't widely supported, is practically forgotten.
 * [Best practices](https://www.tamurajones.net/GEDCOMForm.xhtml)
-* If HEAD.GEDC.FORM.FORM is EVENT, issue an informational message, and continue processing as a LINEAGE-LINKED GEDCOM.
-* Validating Event GEDCOM is an optional advanced feature; it is okay to simply report errors for all unrecognised tags.
+* Not LINEAGE-LINKED but LINAGE-LINKED, LINEAGE_LINKED, Lineage - Linked
+* Event GEDCOM never caught on, isn't widely supported, and is practically forgotten.
+* If HEAD.GEDC.FORM.FORM is EVENT, issue an informational message, and continue processing as a LINEAGE-LINKED GEDCOM. Validating Event GEDCOM is an optional advanced feature, so it is okay to simply report errors for all unrecognised tags.
 * The GRAMPS Wiki "GRAMPS and GEDCOM page" discusses GRAMPS XML that gets lost by GEDCOM.
 
