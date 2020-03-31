@@ -1,22 +1,19 @@
 # go-gedcom555
 
-go-gedcom555 takes a stab at implementing GEDCOM version 5.5.5.
+go-gedcom555 might take a stab at implementing GEDCOM version 5.5.5, but for now it's a collection of notes.
 
-*GEDCOM* is the generally accepted standard format for genealogical files. 
-However, it has not been officially updated in ages (not since "GEDCOM 
-5.5.1 beta") and it has some problems with representing a full range of 
-genealogical data. 
+*GEDCOM* is the generally accepted standard format for genealogical files. <br/>
+However, the last update had been "GEDCOM 5.5.1 beta" way back in 1999.
 
-There are currently two efforts to update the standard: 
-one is known as GEDCOM 5.5.5 and the other is known as GEDCOM X.
+GEDCOM 5.5.5 is a new version, just approved in late 2019.
 
-*GEDCOM X* has several issues (IMHO). There hasn't been (AFAICT) much 
-activity on it for years. There is no mention of compatibility with 
-or upgradability from GEDCOM 5.5.1. Its only current implementation 
-is written in Java. So, let's ignore it, at least for now. 
+* [The minimum 5.5.5 file](https://www.gedcom.org/samples/MINIMAL555.GED)
+* [A sample 5.5.5 file](https://www.gedcom.org/samples/555SAMPLE.GED)
+* [Tour a minimal 5.5.5. file](https://www.tamurajones.net/TheMinimalGEDCOM555File.xhtml)
 
-*GEDCOM 5.5.5* on the other hand is highly compatible with 
-(and upgradable from) 5.5.1, so this is worth pursuing.
+For more information about 5.5.5, see [`LINKS.md`](LINKS.MD)
 
 Currently there are two Golang codebases addressing GEDCOM.
 
+* iand (obsolete?) - [code](https://github.com/iand/gedcom) - [docu](https://godoc.org/github.com/iand/gedcom)
+* elliotchance (under active dev'mt) - [code](https://github.com/elliotchance/gedcom) - [docu](https://godoc.org/github.com/elliotchance/gedcom)
